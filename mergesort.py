@@ -1,6 +1,3 @@
-def ASSIGNMENT(new_list, i, old_list, j):
-    new_list[i] = old_list[j]
-
 
 def mergeSort(list):
     if (
@@ -21,10 +18,10 @@ def mergeSort(list):
 
         while left_index < len(left) and right_index < len(right):
             if left[left_index] <= right[right_index]:
-                ASSIGNMENT(new_list=list, i=i, old_list=left, j=left_index)
+                list[i] = left[left_index]
                 left_index += 1
             else:
-                ASSIGNMENT(new_list=list, i=i, old_list=right, j=right_index)
+                list[i] = right[right_index]
                 right_index += 1
             i += 1
 
