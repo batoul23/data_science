@@ -1,3 +1,4 @@
+import matplotlib.pyplot as plt
 
 def mergeSort(list):
     if (
@@ -35,8 +36,6 @@ def mergeSort(list):
             right_index += 1
             i += 1
 
-
-import matplotlib.pyplot as plt
 
 my_list = [54, 26, 93, 17, 77, 31, 44, 55, 20]
 x = range(len(my_list))
