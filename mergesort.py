@@ -47,14 +47,16 @@ def mergeSort(list):
 
 data = [54, 26, 93, 17, 77, 31, 44, 55, 20]
 
+plt.figure(figsize = (12,5))
 # Vor dem Sortieren
+plt.subplot(1,2,1)
 plt.plot(range(len(data)), data, label="Unsortiert")
 plt.title("Vor dem Sortieren")
-plt.show()
 
 mergeSort(data)
 
 # Nach dem Sortieren
+plt.subplot(1,2,2)
 plt.plot(range(len(data)), data, label="Sortiert", color="green")
 plt.title("Nach dem Sortieren")
 plt.show()
